@@ -51,7 +51,7 @@ app.use(cors({credentials: true, origin: 'http://localhost'}));
 app.use('/recognize/execute', microblinkRoutes);
 app.use('/api/mongo', mongoRoutes);
 
-let port = process.env.SERVER_PORT || 4000;
+let port = process.env.PORT || 4000;
 app.listen(port, '0.0.0.0');
 
 console.log('Server is listening on port ' + port);
