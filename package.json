@@ -1,0 +1,36 @@
+{
+  "name": "microblink-demo-back",
+  "version": "1.0.0",
+  "description": "API as proxy for microblink API and to store data if needed",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker-server": "nodemon ./server",
+    "start": "node ./server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukavrtaric/microblink-demo-back.git"
+  },
+  "keywords": [
+    "Microblink",
+    "API"
+  ],
+  "author": "Luka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukavrtaric/microblink-demo-back/issues"
+  },
+  "homepage": "https://github.com/lukavrtaric/microblink-demo-back#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.5",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
