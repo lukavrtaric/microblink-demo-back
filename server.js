@@ -45,7 +45,8 @@ const app = express();
 app.use(bodyParser.json({limit: '30mb'}));
 app.use(bodyParser.urlencoded({limit: '30mb', extended: true}));
 // Testing frontend<->backend localy and CORS problems were involved 
-app.use(cors({credentials: true}));
+// comment this if running on different servers or docker containers or smth
+app.use(cors({credentials: true, origin: 'https://microblinkdemo-79e7b.web.app'}));
 app.use('/recognize/execute', microblinkRoutes);
 app.use('/api/mongo', mongoRoutes);
 
