@@ -35,7 +35,7 @@ const connectWithRetry = () => {
         });
 }
 
-// Retry added if backend app and mongo app running in different docker containers
+// Retry added since backend app and mongo app running in different docker containers
 // Sometimes mongo container isn't ready/up when backend trying to connect
 connectWithRetry();
 
